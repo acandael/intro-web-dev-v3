@@ -1,0 +1,11 @@
+{
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "scripts/setup",
+  "forwardPorts": [5500],
+  "remoteEnv": {
+    "TERM": "xterm-256color"
+  }
+}

@@ -1,0 +1,5 @@
+
+#!/bin/bash
+set -e
+/usr/local/bin/mise trust "$(pwd)/mise.toml" && /usr/local/bin/mise install
+mise exec -- npm install -g live-server
